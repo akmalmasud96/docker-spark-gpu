@@ -1,12 +1,14 @@
-FROM bde2020/spark-base:3.3.0-hadoop3.3
+FROM spark-base:3.2.3-hadoop3.2
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
+LABEL maintainer="Akmal Masud <akmalmasud96@gmail.com>"
 
 COPY worker.sh /
 
 ENV SPARK_WORKER_WEBUI_PORT 8081
 ENV SPARK_WORKER_LOG /spark/logs
 ENV SPARK_MASTER "spark://spark-master:7077"
+ENV CORES=8
+ENV MEMORY=16G
 
 EXPOSE 8081
 

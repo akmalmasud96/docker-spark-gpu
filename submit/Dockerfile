@@ -1,6 +1,6 @@
-FROM bde2020/spark-base:3.3.0-hadoop3.3
+FROM spark-base:3.2.3-hadoop3.2
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
+LABEL maintainer="Akmal Masud <akmalmasud96@gmail.com>"
 
 ENV SPARK_MASTER_NAME spark-master
 ENV SPARK_MASTER_PORT 7077
